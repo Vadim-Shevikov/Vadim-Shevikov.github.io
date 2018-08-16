@@ -6,7 +6,6 @@
 }
 
 html {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -30,7 +29,7 @@ html {
 
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Lato", sans-serif;
     color: #181818;
 }
 
@@ -41,6 +40,7 @@ li {
 header {
     background-color: #fff;
     position: fixed;
+    z-index: 2;
     width: 100%;
 }
 
@@ -59,7 +59,7 @@ header {
         line-height: 60px;
         text-decoration: none;
         color: #181818;
-        transition: background-color,transform .6s;
+        transition: background-color,transform .3s;
     }
 
     &__item {
@@ -68,7 +68,7 @@ header {
 
         &:hover .nav__link {
             background-color: #ee6557;
-            transform: scale(1.25);
+            transform: scale(1.2);
             color: white;
         }
     }
@@ -76,13 +76,13 @@ header {
 
 
 .container {
-    width: 800px;
+    width: 1200px;
     height: 100%;
     margin: 0 auto;
 }
 
 .section {
-    height: 100vh;
+    // height: 100vh;
     border: 2px solid red;
     &__background-overlay {
         width: 100%;
@@ -91,17 +91,82 @@ header {
     }
 
     &__wrapper {
-        padding: 300px 0;
+        padding: 300px 0 0;
         border: 2px solid orange;
     }
 
     &__white-box {
+        padding: 10px 0;
         background-color: #fff;
-        border: 1px solid brown;
         width: 100%;
     }
 
     &-about {
         @include background-image(html,50%,-10%);
+
+        &__content {
+            padding: 20px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        &__user-data {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            &--title {
+                text-transform: uppercase;
+                padding-bottom: 5px;
+            }
+
+            &--icons {
+                position: absolute;
+                top: calc(50% - 15px);
+                font-size: 30px;
+                left: 120px;
+            }
+
+            &--part {
+
+                &-first {
+                    // width: 30%;
+                }
+
+                &-item {
+                    border: 1px solid green;
+                    margin: 5px;
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    &-skills {
+        @include background-image(js, 50%, 0)
+    }
+
+    &__title {
+        position: sticky;
+        z-index: 1;
+        top: 50px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        
+        &--content {
+            font-size: 45px;
+            padding: 0 20px;
+            font-weight: normal;
+            text-transform: uppercase;
+            // position: sticky;
+            // top: -1px;
+        }
+
+        &--line {
+            width: 100%;
+            background-image: repeating-linear-gradient(to top, #fff, #fff 6px, #6a6a65 6px, #6a6a65 8px);
+        }
     }
 }
