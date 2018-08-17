@@ -16,7 +16,7 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="" class="nav__link">Home</a>
+                        <a href="#" class="nav__link">Home</a>
                         </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">About</a>
@@ -44,7 +44,7 @@
         </div>
     </header>
     <main>
-        <section class="section section-about">
+        <section class="section section-about" id="about">
             <div class="section__background-overlay">
                 <div class="section__wrapper">
                     <div class="section__white-box">
@@ -54,105 +54,154 @@
                                 <h2 class="section__title--content">About</h2>
                                 <div class="section__title--line"></div>
                             </div>
-                            <p class="section-about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas voluptates explicabo ea ipsum possimus, reiciendis, beatae hic suscipit, rem numquam odio labore! Natus commodi qui fuga soluta pariatur odit cum maxime dolores! Laudantium voluptatem non cum, ipsam sed dolor tenetur exercitationem ut mollitia deserunt sit nostrum assumenda vel quas!</p>
+                            <p class="section-about__content">Some information about me!!!</p>
                             <div class="section-about__user-data">
-                                <div class="section-about__user-data--part-first">
+                                <div class="section-about__user-data--part section-about__user-data--part-first">
                                     <div class="section-about__user-data--part-item">
                                         <h3 class="section-about__user-data--title">Full name</h3>
-                                        <i class="material-icons section-about__user-data--icons">mood</i>
-                                        <p>Vadim Shevikov</p>
+                                        <i class="material-icons section-about__user-data--icons section-about__user-data--icons-right">mood</i>
+                                        <address class="section-about__user-data--text">Vadim Shevikov</address>
                                     </div>
                                     <div class="section-about__user-data--part-item">
-                                        <h3 class="section-about__user-data--title">Full name</h3>
-                                        <i class="material-icons section-about__user-data--icons">mood</i>
-                                        <p>Vadim Shevikov</p>
+                                        <h3 class="section-about__user-data--title">Birthday</h3>
+                                        <i class="material-icons section-about__user-data--icons section-about__user-data--icons-right">cake</i>
+                                        <p class="section-about__user-data--text">03.10.1993</p>
                                     </div>
                                     <div class="section-about__user-data--part-item">
-                                        <h3 class="section-about__user-data--title">Full name</h3>
-                                        <i class="material-icons section-about__user-data--icons">mood</i>
-                                        <p>Vadim Shevikov</p>
+                                        <h3 class="section-about__user-data--title">Birth place</h3>
+                                        <i class="material-icons section-about__user-data--icons section-about__user-data--icons-right">pin_drop</i>
+                                        <p class="section-about__user-data--text">Zhytomyr,  Ukraine</p>
                                     </div> 
                                 </div>
-                                <img src="assets/img/vue.png" alt="" />
-                                <div class="section-about__user-data--part-first">
-                                    <div class="section-about__user-data--part-item">
-                                        <h3 class="section-about__user-data--title">Full name</h3>
-                                        <i class="material-icons section-about__user-data--icons">mood</i>
-                                        <p>Vadim Shevikov</p>
-                                    </div>
-                                    <div class="section-about__user-data--part-item">
-                                        <h3 class="section-about__user-data--title">Full name</h3>
-                                        <i class="material-icons section-about__user-data--icons">mood</i>
-                                        <p>Vadim Shevikov</p>
-                                    </div>
-                                    <div class="section-about__user-data--part-item">
-                                        <h3 class="section-about__user-data--title">Full name</h3>
-                                        <i class="material-icons section-about__user-data--icons">mood</i>
-                                        <p>Vadim Shevikov</p>
-                                    </div> 
+                                <div class="section-about__user-data--photo-box">
+                                    <img src="assets/img/photo.png" alt="photo" class="section-about__user-data--photo"/>
                                 </div>
+                                <div class="section-about__user-data--part section-about__user-data--part-second">
+                                        <div class="section-about__user-data--part-item">
+                                            <h3 class="section-about__user-data--title">Address</h3>
+                                            <i class="material-icons section-about__user-data--icons section-about__user-data--icons-left">place</i>
+                                            <p class="section-about__user-data--text">Kyiv, Ukraine</p>
+                                        </div>
+                                        <div class="section-about__user-data--part-item">
+                                            <h3 class="section-about__user-data--title">Phone</h3>
+                                            <i class="material-icons section-about__user-data--icons section-about__user-data--icons-animation section-about__user-data--icons-left ">local_phone</i>
+                                            <address class="section-about__user-data--text"><a href="tel:+380966579625">+380966579625</a></address>
+                                        </div>
+                                        <div class="section-about__user-data--part-item">
+                                            <h3 class="section-about__user-data--title">Email address</h3>
+                                            <i class="material-icons section-about__user-data--icons-animation section-about__user-data--icons section-about__user-data--icons-left">local_post_office</i>
+                                            <address class="section-about__user-data--text"><a href="mailto:vadim.shevikov03@gmail.com">vadim.shevikov03@gmail.com</a></address>
+                                        </div> 
+                                    </div>
                             </div>
-                            <p class="section-about__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, voluptatibus ea in voluptates est ratione ut vel! Aliquid assumenda fugiat similique reiciendis aut laboriosam repudiandae animi reprehenderit doloremque nulla voluptatum, voluptate fuga illum quisquam laudantium eius ipsum eum explicabo consequatur sint! Quas rem necessitatibus modi, minima obcaecati omnis excepturi non autem consequuntur commodi quae odit laboriosam nobis nesciunt praesentium exercitationem. Atque exercitationem nihil explicabo adipisci quae hic totam, animi blanditiis ipsum natus voluptates fuga architecto qui asperiores, nesciunt officiis voluptatum rem tenetur laboriosam. Quia distinctio minima perferendis iure est modi fugit laboriosam hic. Nostrum quidem amet eligendi magni accusamus voluptas pariatur, vitae, adipisci perspiciatis ullam molestias placeat voluptates sequi ut doloribus dolor omnis possimus necessitatibus harum, dolore nesciunt labore eius illo nisi? Totam quae iusto natus libero laudantium molestiae! Ut repellendus enim tempora facilis ea doloremque nostrum reprehenderit voluptatum ipsum veniam, inventore delectus, asperiores et ad. Perspiciatis est, dolorem architecto fuga amet harum pariatur nihil qui, explicabo repudiandae numquam. In asperiores reiciendis esse ab minus atque voluptate commodi, sit, vitae magnam dolor cumque rerum est laboriosam fugit accusamus dolores, culpa illum excepturi totam ipsam aut exercitationem non. Consectetur voluptatem veritatis eligendi ea ab molestiae quod earum at aperiam soluta natus porro corrupti vero sed aliquam ratione dicta recusandae temporibus et, explicabo vel facilis qui ducimus. Perspiciatis aliquid magni et dolor placeat quasi ex. Dolorum voluptate, nam esse voluptatibus corrupti iure corporis, aspernatur maiores qui quo quam facere debitis mollitia vel aliquid possimus. Id voluptas repellat non ad maxime totam ea reprehenderit, labore voluptatem hic, quam similique dolorem inventore eius quod fugit deserunt debitis quae sed? Quibusdam voluptas nam libero reiciendis animi error iste sequi mollitia enim at porro dolorem autem quis minus repellendus fugit molestias, qui sunt ullam laboriosam totam ab quod dolorum? Officiis, architecto harum quae ab aspernatur corrupti?</p>
+                            <p class="section-about__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ut odio ad quam aliquid. Pariatur similique provident deserunt mollitia ex iste, assumenda expedita repudiandae praesentium aspernatur repellendus illum magnam rerum reprehenderit natus sequi totam nulla dignissimos quam maiores eveniet aut voluptatum sed? Expedita facere eum, ab et pariatur totam est excepturi temporibus ducimus quos animi non omnis placeat asperiores officiis! Quas veritatis corrupti error non explicabo officia pariatur numquam labore facilis, rerum iusto praesentium amet, sequi a nemo culpa. Commodi, dicta molestiae. Perferendis soluta voluptate, molestiae officiis unde excepturi numquam deserunt omnis? Aliquam consequuntur nihil cum totam saepe praesentium voluptas!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section section-skills" id="about">
-                <div class="section__background-overlay">
-                    <div class="section__wrapper">
-                        <div class="section__white-box">
-                            <div class="container">
-                                <div class="section__title">
-                                    <div class="section__title--line"></div>
-                                    <h2 class="section__title--content">Skills</h2>
-                                    <div class="section__title--line"></div>
-                                </div>
-                                <p class="section-about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas voluptates explicabo ea ipsum possimus, reiciendis, beatae hic suscipit, rem numquam odio labore! Natus commodi qui fuga soluta pariatur odit cum maxime dolores! Laudantium voluptatem non cum, ipsam sed dolor tenetur exercitationem ut mollitia deserunt sit nostrum assumenda vel quas!</p>
-                                <div class="section-about__user-data">
-                                    <div class="section-about__user-data--part-first">
-                                        <div class="section-about__user-data--part-item">
-                                            <h3 class="section-about__user-data--title">Full name</h3>
-                                            <i class="material-icons section-about__user-data--icons">mood</i>
-                                            <p>Vadim Shevikov</p>
-                                        </div>
-                                        <div class="section-about__user-data--part-item">
-                                            <h3 class="section-about__user-data--title">Full name</h3>
-                                            <i class="material-icons section-about__user-data--icons">mood</i>
-                                            <p>Vadim Shevikov</p>
-                                        </div>
-                                        <div class="section-about__user-data--part-item">
-                                            <h3 class="section-about__user-data--title">Full name</h3>
-                                            <i class="material-icons section-about__user-data--icons">mood</i>
-                                            <p>Vadim Shevikov</p>
-                                        </div> 
-                                    </div>
-                                    <img src="assets/img/vue.png" alt="" />
-                                    <div class="section-about__user-data--part-first">
-                                        <div class="section-about__user-data--part-item">
-                                            <h3 class="section-about__user-data--title">Full name</h3>
-                                            <i class="material-icons section-about__user-data--icons">mood</i>
-                                            <p>Vadim Shevikov</p>
-                                        </div>
-                                        <div class="section-about__user-data--part-item">
-                                            <h3 class="section-about__user-data--title">Full name</h3>
-                                            <i class="material-icons section-about__user-data--icons">mood</i>
-                                            <p>Vadim Shevikov</p>
-                                        </div>
-                                        <div class="section-about__user-data--part-item">
-                                            <h3 class="section-about__user-data--title">Full name</h3>
-                                            <i class="material-icons section-about__user-data--icons">mood</i>
-                                            <p>Vadim Shevikov</p>
-                                        </div> 
-                                    </div>
-                                </div>
-                                <p class="section-about__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, voluptatibus ea in voluptates est ratione ut vel! Aliquid assumenda fugiat similique reiciendis aut laboriosam repudiandae animi reprehenderit doloremque nulla voluptatum, voluptate fuga illum quisquam laudantium eius ipsum eum explicabo consequatur sint! Quas rem necessitatibus modi, minima obcaecati omnis excepturi non autem consequuntur commodi quae odit laboriosam nobis nesciunt praesentium exercitationem. Atque exercitationem nihil explicabo adipisci quae hic totam, animi blanditiis ipsum natus voluptates fuga architecto qui asperiores, nesciunt officiis voluptatum rem tenetur laboriosam. Quia distinctio minima perferendis iure est modi fugit laboriosam hic. Nostrum quidem amet eligendi magni accusamus voluptas pariatur, vitae, adipisci perspiciatis ullam molestias placeat voluptates sequi ut doloribus dolor omnis possimus necessitatibus harum, dolore nesciunt labore eius illo nisi? Totam quae iusto natus libero laudantium molestiae! Ut repellendus enim tempora facilis ea doloremque nostrum reprehenderit voluptatum ipsum veniam, inventore delectus, asperiores et ad. Perspiciatis est, dolorem architecto fuga amet harum pariatur nihil qui, explicabo repudiandae numquam. In asperiores reiciendis esse ab minus atque voluptate commodi, sit, vitae magnam dolor cumque rerum est laboriosam fugit accusamus dolores, culpa illum excepturi totam ipsam aut exercitationem non. Consectetur voluptatem veritatis eligendi ea ab molestiae quod earum at aperiam soluta natus porro corrupti vero sed aliquam ratione dicta recusandae temporibus et, explicabo vel facilis qui ducimus. Perspiciatis aliquid magni et dolor placeat quasi ex. Dolorum voluptate, nam esse voluptatibus corrupti iure corporis, aspernatur maiores qui quo quam facere debitis mollitia vel aliquid possimus. Id voluptas repellat non ad maxime totam ea reprehenderit, labore voluptatem hic, quam similique dolorem inventore eius quod fugit deserunt debitis quae sed? Quibusdam voluptas nam libero reiciendis animi error iste sequi mollitia enim at porro dolorem autem quis minus repellendus fugit molestias, qui sunt ullam laboriosam totam ab quod dolorum? Officiis, architecto harum quae ab aspernatur corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit animi vero minus quos quis ratione rem obcaecati totam. Recusandae, ab consequatur accusantium quos at aliquam modi! Id quas ad expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ullam laboriosam aliquid possimus fugiat repellendus molestias, aliquam voluptatem dicta rem accusamus tenetur beatae ratione delectus nobis ducimus eos, molestiae quaerat hic sint dolor ipsum! Sunt veritatis saepe quidem totam corporis aut porro, quaerat pariatur perspiciatis doloremque enim debitis iste? Dicta consectetur atque architecto ratione ullam nam autem eos, obcaecati, sunt voluptates eveniet quibusdam iusto voluptatibus! Distinctio neque fuga doloremque perferendis praesentium numquam, porro iusto et harum inventore officiis similique vitae, asperiores atque odio? Neque assumenda doloribus suscipit dicta, quaerat debitis laudantium autem iusto excepturi voluptas. Autem, repellendus. Accusamus aperiam pariatur consectetur illum laboriosam aliquid, temporibus eligendi! Natus corporis officia quas iusto labore animi provident omnis, commodi eum itaque doloribus at voluptate saepe nihil soluta ipsam! Illo delectus sapiente placeat ullam iure, in odio distinctio eos omnis dolore repellendus tenetur reprehenderit adipisci, ad sed, inventore facere optio quasi. Quod asperiores libero enim maxime minus deleniti fugiat animi alias unde ducimus temporibus rerum pariatur ratione nihil optio, et cumque! Autem nihil temporibus a molestias ipsum! Non tempore dolorum vitae vel, facilis accusamus et, ex, voluptates similique aspernatur reiciendis harum adipisci modi incidunt fugit dicta eos itaque assumenda molestiae. Possimus nulla dignissimos sequi.</p>
+        <section class="section section-skills" id="skills">
+            <div class="section__background-overlay">
+                <div class="section__wrapper">
+                    <div class="section__white-box">
+                        <div class="container">
+                            <div class="section__title">
+                                <div class="section__title--line"></div>
+                                <h2 class="section__title--content">Skills</h2>
+                                <div class="section__title--line"></div>
+                            </div>
+                            <table class="table">
+                                <thead class="table__header">
+                                    <tr class="table__row">
+                                        <th class="table__col">Skill Category</th>
+                                        <th class="table__col">Skill list</th>
+                                        <th class="table__col">Progress</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table__row">
+                                        <td class="table__col">Programming Languages</td>
+                                        <td class="table__col">Javascript</td>
+                                        <td class="table__col table__col--center">20%<div class="table__progress"><div class="table__progress--fill table__progress--fill-20"></div></div></td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">Technologies</td>
+                                        <td class="table__col">VCS Git, Gulp</td>
+                                        <td class="table__col table__col--center">60%<div class="table__progress"><div class="table__progress--fill table__progress--fill-60"></div></div></td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">Web</td>
+                                        <td class="table__col">JavaScript, HTML, CSS, XML,SASS,BEM</td>
+                                        <td class="table__col table__col--center">80%<div class="table__progress"><div class="table__progress--fill table__progress--fill-80"></div></div></td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">Operating Systems</td>
+                                        <td class="table__col">Linux Ubuntu, Windows</td>
+                                        <td class="table__col table__col--center">90%<div class="table__progress"><div class="table__progress--fill table__progress--fill-90"></div></div></td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__col">Development Tools</td>
+                                        <td class="table__col">VS Code, Sublime Text 3</td>
+                                        <td class="table__col table__col--center">90%<div class="table__progress"><div class="table__progress--fill table__progress--fill-90"></div></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-education" id="education">
+            <div class="section__background-overlay">
+                <div class="section__wrapper">
+                    <div class="section__white-box">
+                        <div class="container">
+                            <div class="section__title">
+                                <div class="section__title--line"></div>
+                                <h2 class="section__title--content">Education</h2>
+                                <div class="section__title--line"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
     <a href="ikea/index.html">Ikea</a>
+    <script>
+        // собираем все якоря; устанавливаем время анимации и количество кадров
+        const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
+            animationTime = 300,
+            framesCount = 20;
+
+        anchors.forEach(function(item) {
+        // каждому якорю присваиваем обработчик события
+        item.addEventListener('click', function(e) {
+            // убираем стандартное поведение
+            e.preventDefault();
+            
+            // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
+            let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
+            
+            // запускаем интервал, в котором
+            let scroller = setInterval(function() {
+            // считаем на сколько скроллить за 1 такт
+            let scrollBy = coordY / framesCount;
+            
+            // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
+            // и дно страницы не достигнуто
+            if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
+                // то скроллим на к-во пикселей, которое соответствует одному такту
+                window.scrollBy(0, scrollBy);
+            } else {
+                // иначе добираемся до элемента и выходим из интервала
+                window.scrollTo(0, coordY);
+                clearInterval(scroller);
+            }
+            // время интервала равняется частному от времени анимации и к-ва кадров
+            }, animationTime / framesCount);
+        });
+        });
+    </script>
 </body>
 </html>
