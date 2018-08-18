@@ -79,6 +79,7 @@ header {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 @keyframes rotate {
@@ -272,8 +273,8 @@ header {
         @include background-image(js, 50%, 10%)
     }
 
-    &-education {
-        @include background-image(gulp, 50%, 10%)
+    &-portfolio {
+        @include background-image(node, 50%, 10%)
     }
 }
 
@@ -324,12 +325,16 @@ header {
                 inset 0 -2px 6px rgba(0,0,0,0.4);
             background-image: repeating-linear-gradient(  -30deg, transparent,transparent 5%, #31da5e 5%, #31da5e 12%);
 
-            &-20 {
-                width: 20%;
+            &-40 {
+                width: 40%;
             }
 
-            &-60 {
-                width: 60%;
+            &-70 {
+                width: 70%;
+            }
+
+            &-75 {
+                width: 75%;
             }
 
             &-80 {
@@ -341,4 +346,17 @@ header {
             }
         }
     }
+}
+
+.social {
+    // position: relative;
+    position: absolute;
+    $width-social: 50%;
+    width: $width-social;
+    border: 1px solid green;
+    top: -150px;
+    left: calc(50% - #{$width-social}/2);
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
 }

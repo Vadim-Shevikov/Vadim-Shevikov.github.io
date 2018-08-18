@@ -54,6 +54,13 @@
                                 <h2 class="section__title--content">About</h2>
                                 <div class="section__title--line"></div>
                             </div>
+                            <ul class="social">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
                             <p class="section-about__content">Some information about me!!!</p>
                             <div class="section-about__user-data">
                                 <div class="section-about__user-data--part section-about__user-data--part-first">
@@ -95,6 +102,7 @@
                                     </div>
                             </div>
                             <p class="section-about__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ut odio ad quam aliquid. Pariatur similique provident deserunt mollitia ex iste, assumenda expedita repudiandae praesentium aspernatur repellendus illum magnam rerum reprehenderit natus sequi totam nulla dignissimos quam maiores eveniet aut voluptatum sed? Expedita facere eum, ab et pariatur totam est excepturi temporibus ducimus quos animi non omnis placeat asperiores officiis! Quas veritatis corrupti error non explicabo officia pariatur numquam labore facilis, rerum iusto praesentium amet, sequi a nemo culpa. Commodi, dicta molestiae. Perferendis soluta voluptate, molestiae officiis unde excepturi numquam deserunt omnis? Aliquam consequuntur nihil cum totam saepe praesentium voluptas!</p>
+                            <a href="assets/doc/CV-Shevikov.docx" download="CV-Shevikov.docx">Download CV here!!!</a>
                         </div>
                     </div>
                 </div>
@@ -122,12 +130,12 @@
                                     <tr class="table__row">
                                         <td class="table__col">Programming Languages</td>
                                         <td class="table__col">Javascript</td>
-                                        <td class="table__col table__col--center">20%<div class="table__progress"><div class="table__progress--fill table__progress--fill-20"></div></div></td>
+                                        <td class="table__col table__col--center">40%<div class="table__progress"><div class="table__progress--fill table__progress--fill-40"></div></div></td>
                                     </tr>
                                     <tr class="table__row">
                                         <td class="table__col">Technologies</td>
                                         <td class="table__col">VCS Git, Gulp</td>
-                                        <td class="table__col table__col--center">60%<div class="table__progress"><div class="table__progress--fill table__progress--fill-60"></div></div></td>
+                                        <td class="table__col table__col--center">70%<div class="table__progress"><div class="table__progress--fill table__progress--fill-70"></div></div></td>
                                     </tr>
                                     <tr class="table__row">
                                         <td class="table__col">Web</td>
@@ -137,12 +145,12 @@
                                     <tr class="table__row">
                                         <td class="table__col">Operating Systems</td>
                                         <td class="table__col">Linux Ubuntu, Windows</td>
-                                        <td class="table__col table__col--center">90%<div class="table__progress"><div class="table__progress--fill table__progress--fill-90"></div></div></td>
+                                        <td class="table__col table__col--center">80%<div class="table__progress"><div class="table__progress--fill table__progress--fill-80"></div></div></td>
                                     </tr>
                                     <tr class="table__row">
                                         <td class="table__col">Development Tools</td>
                                         <td class="table__col">VS Code, Sublime Text 3</td>
-                                        <td class="table__col table__col--center">90%<div class="table__progress"><div class="table__progress--fill table__progress--fill-90"></div></div></td>
+                                        <td class="table__col table__col--center">80%<div class="table__progress"><div class="table__progress--fill table__progress--fill-80"></div></div></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -151,15 +159,22 @@
                 </div>
             </div>
         </section>
-        <section class="section section-education" id="education">
+        <section class="section section-portfolio" id="portfolio">
             <div class="section__background-overlay">
                 <div class="section__wrapper">
                     <div class="section__white-box">
                         <div class="container">
                             <div class="section__title">
                                 <div class="section__title--line"></div>
-                                <h2 class="section__title--content">Education</h2>
+                                <h2 class="section__title--content">Portfolio</h2>
                                 <div class="section__title--line"></div>
+                            </div>
+                            <div class="portfolio__conatiner">
+                                <div class="portfolio__item">
+                                    <h3>Ikea</h3>
+                                    <a href="ikea/index.html">Ikea</a>
+                                    <p>Was used: </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -167,7 +182,6 @@
             </div>
         </section>
     </main>
-    <a href="ikea/index.html">Ikea</a>
     <script>
         // собираем все якоря; устанавливаем время анимации и количество кадров
         const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
