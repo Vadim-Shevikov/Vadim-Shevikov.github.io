@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -12,8 +13,12 @@ body {
 .box {
   width: 563px;
   margin: 120px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
@@ -23,7 +28,8 @@ body {
 }
 
 .content:hover .block {
-  animation: anim 0.35s forwards;
+  -webkit-animation: anim 0.35s forwards;
+          animation: anim 0.35s forwards;
 }
 
 .img {
@@ -42,13 +48,15 @@ body {
 }
 
 .shadow {
-  filter: drop-shadow(0 5px 15px #2b2828);
+  -webkit-filter: drop-shadow(0 5px 15px #2b2828);
+          filter: drop-shadow(0 5px 15px #2b2828);
 }
 
 .block {
   background-color: #fff;
   border-radius: 5px;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .block__title {
@@ -94,18 +102,41 @@ body {
   cursor: pointer;
 }
 
-@keyframes anim {
+@-webkit-keyframes anim {
   from {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   60% {
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   75% {
-    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
   }
   to {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes anim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  60% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  75% {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -22,8 +23,12 @@ body {
 }
 
 .box-header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .box-header-content .menu-icon, .box-header-content .search-icon {
@@ -53,7 +58,8 @@ body {
   left: -9px;
   border-radius: 4px;
   background: url("img/map.jpg") no-repeat 0 0;
-  box-shadow: 5px 5px 40px -10px #000;
+  -webkit-box-shadow: 5px 5px 40px -10px #000;
+          box-shadow: 5px 5px 40px -10px #000;
 }
 
 .box-route-wrapper {

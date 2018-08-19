@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Vadim Shevikov</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="assets/css/nomalize.css"/>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
     <header>
@@ -22,22 +22,10 @@
                         <a href="#about" class="nav__link">About</a>
                         </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Skills</a>
+                        <a href="#skills" class="nav__link">Skills</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Education</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Experience</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Education</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Portfolio</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Contacts</a>
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
                     </li>
                 </ul>
             </nav>
@@ -54,14 +42,6 @@
                                 <h2 class="section__title--content">About</h2>
                                 <div class="section__title--line"></div>
                             </div>
-                            <ul class="social">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li>4</li>
-                                <li>5</li>
-                            </ul>
-                            <p class="section-about__content">Some information about me!!!</p>
                             <div class="section-about__user-data">
                                 <div class="section-about__user-data--part section-about__user-data--part-first">
                                     <div class="section-about__user-data--part-item">
@@ -101,8 +81,8 @@
                                         </div> 
                                     </div>
                             </div>
-                            <p class="section-about__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ut odio ad quam aliquid. Pariatur similique provident deserunt mollitia ex iste, assumenda expedita repudiandae praesentium aspernatur repellendus illum magnam rerum reprehenderit natus sequi totam nulla dignissimos quam maiores eveniet aut voluptatum sed? Expedita facere eum, ab et pariatur totam est excepturi temporibus ducimus quos animi non omnis placeat asperiores officiis! Quas veritatis corrupti error non explicabo officia pariatur numquam labore facilis, rerum iusto praesentium amet, sequi a nemo culpa. Commodi, dicta molestiae. Perferendis soluta voluptate, molestiae officiis unde excepturi numquam deserunt omnis? Aliquam consequuntur nihil cum totam saepe praesentium voluptas!</p>
-                            <a href="assets/doc/CV-Shevikov.docx" download="CV-Shevikov.docx">Download CV here!!!</a>
+                            <p class="section-about__content">Experience in HTML, CSS, SASS, BEM, JavaScript, Git, Gulp, Photoshop, Linux. Motivated to constantly learn. More information about me in the CV</p>
+                            <a href="assets/doc/CV-Shevikov.docx" download="CV-Shevikov.docx" class="section-about__content--cv">Download CV</a>
                         </div>
                     </div>
                 </div>
@@ -173,145 +153,168 @@
                                 <div class="portfolio__wrapper portfolio__wrapper--ikea">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Ikea</h3>
-                                        <a href="ikea/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/IKEA" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="ikea/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/IKEA" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github" />
+                                        </a>
                                     </div>
                                 </div>
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--blog">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">My blog</h3>
-                                        <a href="blog/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Adaptive%20my%20blog" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="blog/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Adaptive%20my%20blog" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github" />
+                                        </a>
                                     </div>
                                 </div>
-
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--l1">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">StartUp</h3>
-                                        <a href="startup/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Lending1%20(Bootstrap%20sass)" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="startup/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Lending1%20(Bootstrap%20sass)" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--l2">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Lending</h3>
-                                        <a href="lending/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Lending2(bootstrap%20without%20style)" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="lending/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Lending2(bootstrap%20without%20style)" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--apple">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">AppleWatch</h3>
-                                        <a href="apple/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/AppleWatch" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="apple/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/AppleWatch" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--adform">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Adaptive form</h3>
-                                        <a href="form/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Adaptive%20form(Bootstrap)" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="form/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Adaptive%20form(Bootstrap)" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--airplane">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Airplane</h3>
-                                        <a href="airplane/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/order-airplane" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="airplane/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/order-airplane" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--article">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Article</h3>
-                                        <a href="article/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/article" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="article/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/article" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--bootstrap">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Bootstrap</h3>
-                                        <a href="bootstrap/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Bootstrap3%20without%20css" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="bootstrap/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Bootstrap3%20without%20css" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--chat">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Chat</h3>
-                                        <a href="chat/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/chat" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="chat/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/chat" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--film">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Film</h3>
-                                        <a href="film/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Film" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="film/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Film" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--nav">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Navigation</h3>
-                                        <a href="nav/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Navigation" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="nav/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Navigation" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--nike">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Nike</h3>
-                                        <a href="nike/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Nike" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="nike/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Nike" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--signup">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Sign up</h3>
-                                        <a href="signup/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/signup" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="signup/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/signup" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
-
                                 <div class="portfolio__wrapper portfolio__wrapper--vocab">
                                     <div class="portfolio__inner">
                                         <h3 class="portfolio__title">Vocabulary</h3>
-                                        <a href="vocab/" target="_blank" class="portfolio__link"><i class="material-icons portfolio__icons-link">zoom_in</i></a>
-                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Vocabulary" class="portfolio__code" target="_blank"><img src="assets/img/github.svg" alt="github" class="portfolio__code--github"></a>
+                                        <a href="vocab/" target="_blank" class="portfolio__link">
+                                            <i class="material-icons portfolio__icons-link">zoom_in</i>
+                                        </a>
+                                        <a href="https://github.com/Vadim-Shevikov/Portfolio/tree/master/Vocabulary" class="portfolio__code" target="_blank">
+                                            <img src="assets/img/github.svg" alt="github" class="portfolio__code--github"/>
+                                        </a>
                                     </div>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
@@ -319,5 +322,42 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <ul class="social">
+                <li class="social__item">
+                    <a href="mailto:vadim.shevikov03@gmail.com" class="social__link">
+                        <img src="assets/img/gmail.svg" class="social__icon"  alt=""/>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://www.facebook.com/vadim.shevikov" class="social__link" target="_blank">
+                        <img src="assets/img/facebook.svg" alt="" class="social__icon"/>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://github.com/Vadim-Shevikov" class="social__link" target="_blank">
+                        <img src="assets/img/github_black.svg" alt="" class="social__icon"/>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="assets/doc/CV-Shevikov.docx" download="CV-Shevikov.docx"  class="social__link">
+                        <img src="assets/img/approved.svg" alt="" class="social__icon"/>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="tel:+380966579625" class="social__link">
+                        <img src="assets/img/phone-receiver.svg" alt="" class="social__icon"/>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__copyright">
+                <p>Vadim Shevikov 2018</p>
+            </div>
+            <div class="back">
+                <a href="#" class="back__link">Home</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
