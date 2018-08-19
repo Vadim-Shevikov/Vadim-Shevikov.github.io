@@ -363,7 +363,6 @@ header {
 .portfolio {
     &__container {
         margin-top: 30px;
-        border: 1px solid;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -400,14 +399,70 @@ header {
             width: 100%;
             height: 100%;
             display: block;
-            background-color: rgba(24, 24, 24, .1);
+            background-color: rgba(255, 255, 255, .8);
             left: 0;
             top: -100%;
             transition: all .6s;
         }
 
         &--ikea {
-            background-position: 0 -2395px;
+            background-position: 0 -2400px;
+        }
+
+        &--blog {
+            background-position: 0 -300px;
+        }
+
+        &--adform {
+            background-position: 0 0px;
+        }
+
+        &--airplane {
+            background-position: 0 -600px;
+        }
+
+        &--apple {
+            background-position: 0 -900px;
+        }
+
+        &--article {
+            background-position: 0 -1200px;
+        }
+
+        &--bootstrap {
+            background-position: 0 -1500px;
+        }
+
+        &--chat {
+            background-position: 0 -1800px;
+        }
+
+        &--film {
+            background-position: 0 -2100px;
+        }
+
+        &--l1 {
+            background-position: 0 -2700px;
+        }
+
+        &--l2 {
+            background-position: 0 -3000px;
+        }
+
+        &--nav {
+            background-position: 0 -3300px;
+        }
+
+        &--nike {
+            background-position: 0 -3600px;
+        }
+
+        &--signup {
+            background-position: 0 -3900px;
+        }
+
+        &--vocab {
+            background-position: 0 -4200px;
         }
 
         &:hover:nth-child(2n) {
@@ -443,14 +498,15 @@ header {
 
     &__link {
         display: inline-block;
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
+        margin: 20px 0;
     }
 
     &__icons-link {
         width: 100%;
         font-size: 50px;
-        line-height: 80px;
+        line-height: 40px;
         color: #31da5e;
     }
 
@@ -458,7 +514,7 @@ header {
         display: block;
         width: 40px;
         height: 40px;
-        margin: 0 auto;
+        margin: 10px auto;
 
         &--github {
             width: 100%;
