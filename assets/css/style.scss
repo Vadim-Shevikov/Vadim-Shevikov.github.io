@@ -163,18 +163,15 @@ header {
     @extend %center;
     @extend %relative;
     @include respond-to(desctop) {
-        width: $desctop;
-    }
-    @include respond-to(tablet) {
         width: $tablet;
     }
-    @include respond-to(mobile-landscape) {
+    @include respond-to(tablet) {
         width: $mobile-landscape;
     }
-    @include respond-to(mobile) {
+    @include respond-to(mobile-landscape) {
         width: $mobile;
     }
-    @include respond-to(mobile-litle) {
+    @include respond-to(mobile) {
         width: $mobile-litle;
     }
 }
@@ -468,13 +465,10 @@ header {
         width: 27%;
     }
     @include respond-to(tablet) {
-        width: 35%;
+        width: 34%;
     }
     @include respond-to(mobile-landscape) {
-        width: 40%;
-    }
-    @include respond-to(mobile) {
-        width: 80%;
+        width: 61%;
     }
 
     &__item {

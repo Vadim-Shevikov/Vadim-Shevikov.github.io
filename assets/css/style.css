@@ -168,29 +168,23 @@ header {
 
 @media only screen and (max-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 992px;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .container {
-    width: 992px;
+    width: 768px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
-    width: 768px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .container {
     width: 425px;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
   .container {
     width: 320px;
   }
@@ -538,19 +532,13 @@ header {
 
 @media only screen and (max-width: 992px) {
   .social {
-    width: 35%;
+    width: 34%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .social {
-    width: 40%;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .social {
-    width: 80%;
+    width: 61%;
   }
 }
 
