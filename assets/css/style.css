@@ -129,6 +129,10 @@ header {
   }
 }
 
+.nav {
+  margin: 0 auto;
+}
+
 .nav__list {
   font-weight: bold;
   -webkit-box-pack: space-evenly;
@@ -383,6 +387,20 @@ header {
           filter: drop-shadow(1px 0 10px #aaa);
 }
 
+@media only screen and (max-width: 768px) {
+  .section-about__user-data--photo {
+    width: 180px;
+    top: -60px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section-about__user-data--photo {
+    width: 150px;
+    top: -60px;
+  }
+}
+
 .section-about__user-data--photo-box {
   width: 270px;
   height: 350px;
@@ -397,9 +415,18 @@ header {
   border-image-slice: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  .section-about__user-data--photo-box {
+    width: 150px;
+    height: 195px;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .section-about__user-data--photo-box {
     border: none;
+    margin-bottom: 50px;
+    margin-bottom: -30px;
   }
 }
 
@@ -539,6 +566,12 @@ header {
 @media only screen and (max-width: 768px) {
   .social {
     width: 61%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .social {
+    width: 81%;
   }
 }
 

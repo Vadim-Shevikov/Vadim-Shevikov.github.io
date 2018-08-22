@@ -111,6 +111,7 @@ body {
     color: #181818;
     width: 100vw;
     overflow-x: hidden;
+
 }
 
 li {
@@ -128,6 +129,7 @@ header {
 }
 
 .nav {
+    margin: 0 auto;
     &__list {
         font-weight: bold;
         @extend %flex;
@@ -333,6 +335,14 @@ header {
                 top: -80px;
                 left: -40px;
                 filter: drop-shadow(1px 0 10px #aaa);
+                @include respond-to(mobile-landscape) {
+                    width: 180px;
+                    top: -60px;
+                }
+                @include respond-to(mobile) {
+                    width: 150px;
+                    top: -60px;
+                }
 
                 &-box {
                     width: 270px;
@@ -344,8 +354,14 @@ header {
                     border-style: solid;
                     border-image: linear-gradient(to bottom, #16a6b6 0%, transparent 30%, transparent 80%, #ee6557 100%);
                     border-image-slice: 1;
+                    @include respond-to(mobile-landscape) {
+                        width: 150px;
+                        height: 195px;
+                    }
                     @include respond-to(mobile) {
                         border: none;
+                        margin-bottom: 50px;
+                        margin-bottom: -30px;
                     }
                     
                     &::after {
@@ -469,6 +485,9 @@ header {
     }
     @include respond-to(mobile-landscape) {
         width: 61%;
+    }
+    @include respond-to(mobile) {
+        width: 81%;
     }
 
     &__item {
