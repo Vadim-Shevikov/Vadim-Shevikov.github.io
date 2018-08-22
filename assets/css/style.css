@@ -108,6 +108,8 @@ html {
 body {
   font-family: "Lato", sans-serif;
   color: #181818;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 li {
@@ -166,26 +168,36 @@ header {
 
 @media only screen and (max-width: 1200px) {
   .container {
-    width: 990px;
+    width: 1200px;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .container {
-    width: 760px;
+    width: 992px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
-    width: 420px;
+    width: 768px;
   }
 }
 
 @media only screen and (max-width: 425px) {
   .container {
+    width: 425px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
     width: 320px;
   }
+}
+
+.section {
+  min-width: 320px;
 }
 
 .section__background-overlay {
@@ -194,6 +206,7 @@ header {
 
 .section__wrapper {
   padding: 300px 0 0;
+  width: 100%;
 }
 
 .section__white-box {
@@ -217,6 +230,12 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 992px) {
+  .section__title {
+    position: static;
+  }
 }
 
 .section__title--content {
@@ -276,7 +295,7 @@ header {
           align-items: center;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   .section-about__user-data {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -300,7 +319,7 @@ header {
   left: 260px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   .section-about__user-data--icons-right {
     left: -30px;
   }
@@ -328,7 +347,7 @@ header {
   min-width: 250px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   .section-about__user-data--part-item {
     text-align: center;
   }
@@ -525,7 +544,7 @@ header {
 
 @media only screen and (max-width: 768px) {
   .social {
-    width: 60%;
+    width: 40%;
   }
 }
 

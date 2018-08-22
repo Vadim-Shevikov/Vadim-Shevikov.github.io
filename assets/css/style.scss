@@ -3,6 +3,7 @@ $desctop:1200px;
 $tablet:992px;
 $mobile-landscape:768px;
 $mobile:425px;
+$mobile-litle:320px;
 
 @mixin background-image($name,$x,$y) {
     background:url(..//img/#{$name}.png) $x $y no-repeat, #f5f5f5;
@@ -25,6 +26,10 @@ $mobile:425px;
         }
     } @else if $media == mobile {
         @media only screen and (max-width:$mobile) {
+            @content;
+        }
+    } @else if $media == mobile-litle {
+        @media only screen and (max-width:$mobile-litle) {
             @content;
         }
     }
@@ -104,6 +109,8 @@ html {
 body {
     font-family: "Lato", sans-serif;
     color: #181818;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 li {
@@ -156,20 +163,24 @@ header {
     @extend %center;
     @extend %relative;
     @include respond-to(desctop) {
-        width: 990px;
+        width: $desctop;
     }
     @include respond-to(tablet) {
-        width: 760px;
+        width: $tablet;
     }
     @include respond-to(mobile-landscape) {
-        width: 420px;
+        width: $mobile-landscape;
     }
     @include respond-to(mobile) {
-        width: 320px;
+        width: $mobile;
+    }
+    @include respond-to(mobile-litle) {
+        width: $mobile-litle;
     }
 }
 
 .section {
+    min-width: 320px;
     &__background-overlay {
         @extend %full-size;
         background-color: rgba(245, 245, 245, .9);
@@ -177,6 +188,7 @@ header {
 
     &__wrapper {
         padding: 300px 0 0;
+        width: 100%;
     }
 
     &__white-box {
@@ -194,6 +206,9 @@ header {
         background-color: #fff;
         display: flex;
         justify-content: space-between;
+        @include respond-to(tablet) {
+            position: static;
+        }
         
         &--content {
             font-size: 45px;
@@ -243,7 +258,7 @@ header {
             @extend %flex;
             justify-content: center;
             align-items: center;
-            @include respond-to(desctop) {
+            @include respond-to(tablet) {
                 flex-direction: column;
             }
 
@@ -260,7 +275,7 @@ header {
 
                 &-right {
                     left: 260px;
-                    @include respond-to(desctop) {
+                    @include respond-to(tablet) {
                         left: -30px;
                     }
                 }
@@ -284,7 +299,7 @@ header {
                     margin: 25px 5px;
                     @extend %relative;
                     min-width: 250px;
-                    @include respond-to(desctop) {
+                    @include respond-to(tablet) {
                         text-align: center;
                     }
 
@@ -456,7 +471,7 @@ header {
         width: 35%;
     }
     @include respond-to(mobile-landscape) {
-        width: 60%;
+        width: 40%;
     }
     @include respond-to(mobile) {
         width: 80%;
